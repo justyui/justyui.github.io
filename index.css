@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: sans-serif;
     background-color: white;
-    overflow: hidden;
 }
 
 .container {
@@ -14,39 +13,106 @@ body {
     box-sizing: border-box;
 }
 
+@media (max-width: 300px) {
+    .menu {
+        visibility: hidden;
+    }
+}
+
+.block {
+    display: inline-block;
+}
+
+.blank {
+    height: 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 3px 3px 10px rgba(150, 150, 150, 0.51);
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
 .head {
-    height: 50px;
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 180px;
-    font-size: 25px;
+    justify-content: space-between;
+    height: 70px;
+    line-height: 30px;
     background-color: white;
+}
 
+.logo {
+    margin: 20px 0 0 5%;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+}
 
+.ham {
+    cursor: pointer;
+    margin: 20px 30px 0 0;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(140, 140, 140);
 }
 
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: white;
+    height: 30px;
+    line-height: 20px;
 }
 
 .menu-item {
     display: block;
-    padding: 20px 110px;
+    width: 100px;
+    text-align: center;
     color: black;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
 }
 
+.navbar {
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 60px;
+}
+
+.navbar.show-menu{
+    display: inherit;
+    position: fixed;
+    right: 20px;
+    top: 60px;
+}
+
+.nav-item {
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: white;
+    border-style: solid;
+    border-width: 30;
+    border-color: rgb(173, 173, 173);
+}
+
 .post-box {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
-    height: 500px;
+    height: 40%;
     overflow-y: auto;
 }
 

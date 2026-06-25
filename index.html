@@ -1,21 +1,41 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script>
+        function menu() {
+            var x = document.getElementById('navbar');
+            x.classList.toggle('show-menu');
+        }
+    </script>
 </head>
+
 <body>
     <div class="container">
-        <div class="head">
-            Gongmoa
-        </div>
-        <div class="menu">
-            <a href="list.html" class="menu-item">글 목록</a>
-            <a href="post.html" class="menu-item">글쓰기</a>
-            <a href="mypage.html" class="menu-item">마이페이지</a>
-        </div>
+        <header>
+            <div class="head">
+                <div class="logo block">
+                    Gongmoa
+                </div>
+                <div class="ham block" onclick="menu()">
+                </div>
+            </div>
+            <div class="menu">
+                <a href="list.html" class="menu-item">글 목록</a>
+                <a href="post.html" class="menu-item">글쓰기</a>
+                <a href="mypage.html" class="menu-item">마이페이지</a>
+            </div>
+            <div class="navbar" id="navbar">
+                <a href="list.html" class="nav-item">글 목록</a>
+                <a href="post.html" class="nav-item">글쓰기</a>
+                <a href="mypage.html" class="nav-item">마이페이지</a>
+            </div>
+        </header>
+        <div class="blank"></div>
         <div class="post-box-title">게시물 목록</div>
         <div class="post-box">
             <div class="post-item">
@@ -30,7 +50,8 @@
             <div class="post-item">
                 <a href="detail.html">
                     <div class="post-content">
-                        <span class="title">000공모전 함께하실 분 구합니다.........kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</span>
+                        <span class="title">000공모전 함께하실 분
+                            구합니다.........kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</span>
                         <span class="author">홍길동</span>
                     </div>
                     <span class="label">D-30</span>
@@ -39,7 +60,8 @@
             <div class="post-item">
                 <a href="detail.html">
                     <div class="post-content">
-                        <span class="title">000공모전 함께하실 분 구합니다.........ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</span>
+                        <span class="title">000공모전 함께하실 분
+                            구합니다.........ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</span>
                         <span class="author">심청</span>
                     </div>
                     <span class="label">D-1</span>
@@ -58,4 +80,5 @@
     </div>
 
 </body>
+
 </html>
