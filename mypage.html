@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mypage.css">
+    <script>
+        function menu() {
+            var x = document.getElementById('navbar');
+            x.classList.toggle('show-menu');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo block">
+                    Gongmoa
+                </div>
+                <div class="ham block" onclick="menu()">
+                </div>
+            </div>
+            <div class="menu">
+                <a href="list.html" class="menu-item">글 목록</a>
+                <a href="post.html" class="menu-item">글쓰기</a>
+                <a href="mypage.html" class="menu-item">마이페이지</a>
+            </div>
+            <div class="navbar" id="navbar">
+                <a href="list.html" class="nav-item">글 목록</a>
+                <a href="post.html" class="nav-item">글쓰기</a>
+                <a href="mypage.html" class="nav-item">마이페이지</a>
+            </div>
+        </header>
+        <div class="blank"></div>
+        <div class="login-back">
+            <div class="login block">
+                로그인
+            </div>
+            <div class="type-box">
+                <div class="id-box">
+                    <input type="text" name="id-box">
+                </div>
+                <div class="password-box">
+                    <input type="password" name="password-box">
+                </div>
+            </div>
+            <div class="button-box">
+                <div class="register-button">
+                    <input type="button" name="register-button" value="회원가입">
+                </div>
+                <div class="button-blank"></div>
+                <div class="login-button">
+                    <input type="button" name="login-button" value="로그인">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
