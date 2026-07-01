@@ -159,13 +159,17 @@ input[type=password] {
     background-color: rgb(240, 240, 240);
 }
 
-input[name="register-button"]{
+.register-button {
     border-radius: 0;
     border-width: 0px;
     width: 85px;
     height: 30px;
     background-color: rgb(189, 219, 253);
     font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: black;
 }
 
 input[name="login-button"] {
