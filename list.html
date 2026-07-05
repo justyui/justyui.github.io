@@ -200,48 +200,15 @@
         <div class="blank"></div>
         <div class="post-box-title">게시물 목록</div>
         <div class="post-box">
-            <div class="post-item">
-                <a href="detail.html">
-                    <div class="post-content">
-                        <span class="title">000공모전 함께하실 분 구합니다</span>
-                        <span class="author">작성자</span>
-                    </div>
-                    <span class="label">D-19</span>
-                </a>
-            </div>
-            <div class="post-item">
-                <a href="detail.html">
-                    <div class="post-content">
-                        <span class="title">
-                            000공모전 함께하실 분
-                            구합니다.........kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-                        </span>
-                        <span class="author">홍길동</span>
-                    </div>
-                    <span class="label">D-30</span>
-                </a>
-            </div>
-            <div class="post-item">
-                <a href="detail.html">
-                    <div class="post-content">
-                        <span class="title">
-                            000공모전 함께하실 분
-                            구합니다.........ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
-                        </span>
-                        <span class="author">심청</span>
-                    </div>
-                    <span class="label">D-1</span>
-                </a>
-            </div>
-            <div class="post-item">
-                <a href="detail.html">
-                    <div class="post-content">
-                        <span class="title">공모전 팀원 구해용</span>
-                        <span class="author">이몽룡</span>
-                    </div>
-                    <span class="label">D-8</span>
-                </a>
-            </div>
+         <div class="post-item" th:each="board : ${boardList}">
+            <a href="detail.html" th:href="@{/board/{id}(id=${board.id})}">
+                <div class="post-content">
+                    <span class="title" th:text="${board.boardTitle}"></span>
+                    <span class="author" th:text="${board.boardWriter}"></span>
+                </div>
+                <span class="label" th:text="${board.dday>0?'D-'+board.dday:board.dday==0?'D-Day':'마감'}"></span>
+            </a>
+        </div>                 
         </div>
     </div>
 </body>
