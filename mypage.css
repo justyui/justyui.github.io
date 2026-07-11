@@ -172,7 +172,7 @@ input[type=password] {
     color: black;
 }
 
-input[name="login-button"] {
+.login-button {
     border-radius: 0;
     border-width: 0px;
     width: 85px;
@@ -180,7 +180,11 @@ input[name="login-button"] {
     background-color: rgb(115, 180, 255);
     font-size: 15px;
     color: white;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
 }
+
 .button-blank {
     width: 5px;
 }
