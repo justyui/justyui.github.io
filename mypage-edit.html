@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mypage-edit.css">
+    <script>
+        function menu() {
+            var x = document.getElementById('navbar');
+            x.classList.toggle('show-menu');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo block">
+                    Gongmoa
+                </div>
+                <div class="ham block" onclick="menu()">
+                </div>
+            </div>
+            <div class="menu">
+                <a href="list.html" class="menu-item">글 목록</a>
+                <a href="post.html" class="menu-item">글쓰기</a>
+                <a href="mypage.html" class="menu-item">마이페이지</a>
+            </div>
+            <div class="navbar" id="navbar">
+                <a href="list.html" class="nav-item">글 목록</a>
+                <a href="post.html" class="nav-item">글쓰기</a>
+                <a href="mypage.html" class="nav-item">마이페이지</a>
+            </div>
+        </header>
+        <div class="blank"></div>
+        <div class="register-back">
+            <div class="register block">
+                내 정보 수정
+            </div>
+            <div class="type-box">
+                <div class="text-box">
+                    <div class="info">
+                        자신의 정보를<br>
+                        지유롭게 적어 주세요
+                    </div>
+                    <div class="ex">
+                        ex) 자격증, 수상 경력,
+                        사용 가능한 프로그램
+                    </div>
+                </div>
+                <textarea name="my-info" id="" cols="35" rows="14" style="resize: none;" placeholder="입력해주세요(선택)"></textarea>
+            </div>
+            <div class="edit-done">
+                <a href="mypage-iflog.html" class="edit-done-button">수정 완료</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
