@@ -171,7 +171,7 @@ input[type=password] {
     background-color: rgb(240, 240, 240);
 }
 
-input[name="register-go"]{
+.register-go-button {
     border-radius: 0;
     border-width: 0px;
     width: 85px;
@@ -179,10 +179,14 @@ input[name="register-go"]{
     background-color: rgb(189, 219, 253);
     font-size: 20px;
     text-align: center;
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
 }
 
 .register-go {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
 }
 
