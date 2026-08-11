@@ -1,0 +1,19 @@
+#school-list {
+    list-style: none;
+    padding: 0;
+
+}
+
+#school-list li {
+    display: block;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    cursor: pointer;
+}
+
+
+
+
+
+

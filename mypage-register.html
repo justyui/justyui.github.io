@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mypage-register.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
         function menu() {
             var x = document.getElementById('navbar');
             x.classList.toggle('show-menu');
         }
     </script>
-    <script src="mypage-register.js"></script>
+    <script src="mypage-register.js" defer></script>
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -43,7 +43,7 @@
             </div>
             <div class="type-box">
                 <div class="name-box">
-                    <input type="text" name="name-box" placeholder="이름">
+                    <input type="text" name="name-box" id="name" placeholder="이름">
                 </div>
                 <div class="date-box">
                     <select name="year" id="year">
@@ -79,7 +79,7 @@
                     </select>
                     <div class="date-text block">월</div>
                     <div class="date-blank"></div>
-                    <select name="" id="">
+                    <select name="day" id="day">
                         <option value="">선택</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -116,27 +116,27 @@
                     <div class="date-text block">일</div>
                 </div>
                 <div class="school-box">
-                    <input type="text" name="school" readonly placeholder="학교">
+                    <input type="text" name="school" id="school" placeholder="학교" readonly>
                 </div>
-                <div class="school-button">검색</div>
+                <div class="school-button" onclick="goSchulpage()">검색</div>
                 <div class="major-box">
-                    <input type="text" name="major" readonly placeholder="학과">
+                    <input type="text" name="major" id="major" placeholder="학과">
                 </div>
                 <div class="email-box">
-                    <input type="text" name="name-box" placeholder="학교 이메일">
+                    <input type="text" name="email-box" id="user-email" placeholder="학교 이메일">
                 </div>
                 <div class="email-verify">
                     인증
                 </div>
                 <div class="name-box">
-                    <input type="text" name="id-box" placeholder="아이디">
+                    <input type="text" name="username-box" id="user-id" placeholder="아이디">
                 </div>
                 <div class="name-box">
-                    <input type="password" name="password-box" placeholder="비밀번호">
+                    <input type="password" name="password-box" id="user-password" placeholder="비밀번호">
                 </div>
             </div>
             <div class="register-go">
-                <a href="mypage-register-detail.html" class="register-go-button">다음</a>
+                <button type="button" class="register-go-button" onclick="handleRegister()">다음</button>
             </div>
         </div>
     </div>

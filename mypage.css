@@ -170,6 +170,7 @@ input[type=password] {
     text-align: center;
     line-height: 30px;
     color: black;
+    cursor: pointer;
 }
 
 .login-button {
@@ -183,6 +184,7 @@ input[type=password] {
     text-align: center;
     line-height: 30px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button-blank {

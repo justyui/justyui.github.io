@@ -182,6 +182,7 @@ input[type=password] {
     text-decoration: none;
     color: black;
     line-height: 40px;
+    cursor: pointer;
 }
 
 .register-go {
@@ -223,6 +224,7 @@ select {
     line-height: 18px;
     text-align: center;
     color: white;
+    cursor: pointer;
 }
 
 .email-verify {

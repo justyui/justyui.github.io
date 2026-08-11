@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mypage-register-detail.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="mypage-register-detail.js" defer></script>
     <script>
         function menu() {
             var x = document.getElementById('navbar');
@@ -51,10 +53,10 @@
                         사용 가능한 프로그램
                     </div>
                 </div>
-                <textarea name="my-info" id="" cols="35" rows="14" style="resize: none;" placeholder="입력해주세요(선택)"></textarea>
+                <textarea name="my-info" id="my-info" cols="35" rows="14" style="resize: none;" placeholder="입력해주세요(선택)"></textarea>
             </div>
             <div class="register-done">
-                <a href="mypage-iflog.html" class="register-done-button">다음</a>
+                <button type="button" class="register-done-button" onclick="handleDetailSave()">다음</button>
             </div>
         </div>
     </div>
